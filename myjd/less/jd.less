@@ -1,0 +1,590 @@
+@width: 100%;
+@_width: 1rem;
+@_height: 1rem;
+@imgwidth: 100%;
+html,
+body,
+p,
+ul,
+li,
+span,
+a,
+form,
+h1,
+input,
+h3,
+div,
+h4,
+p,
+dt,
+dd,
+dl,
+h5,
+h6,
+nav,
+h2 ,em,i{
+    padding: 0;
+    margin: 0;
+}
+a,
+span,
+em,
+h1,
+h2,
+h3,
+h4,
+li,
+h5,
+h6,
+i,
+b {
+    font-family: "微软雅黑";
+    text-decoration: none;
+    font-style: normal;
+    list-style: none;
+    color: #9f9f9f;
+}
+.on {
+    background: white !important;
+}
+a:hover {
+    text-decoration: none !important;
+}
+
+header {
+    width: @width;
+    margin: 0 auto;
+}
+header {
+    .search {
+        width:100%;
+        background: rgba(209,56,68,0.1);
+        position: fixed;
+        background:;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        display: flex;
+    }
+    .swiper-container{
+         width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('//at.alicdn.com/t/font_1477134344_1971967.eot');
+    /* IE9*/
+    src:/* IE6-IE8 */
+    /* chrome、firefox */
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/font_1477134344_1971967.eot?#iefix') format('embedded-opentype'),url('//at.alicdn.com/t/font_1477134344_1971967.woff') format('woff'),url('//at.alicdn.com/t/font_1477134344_1971967.ttf') format('truetype'),url('//at.alicdn.com/t/font_1477134344_1971967.svg#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+.search {
+    h1 {
+        flex: 1;
+        margin-left: 0.3rem;
+        display: flex;
+        align-items: center;
+        a {
+            font-family: iconfont;
+            color: white;
+            font-weight: 100;
+            line-height: 2rem;
+        }
+    }
+    span {
+        flex: 0.8;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 0.5rem;
+        line-height:2rem;
+        align-items: center;
+        a {
+            color: white;
+            font-size: 1rem;
+            line-height: 2rem;
+        }
+    }
+    div {
+        flex: 7.2;
+        display: flex;
+        align-items: center;
+        .search-query {
+            background: url("../img/fangdajin.jpg") 0.5rem center no-repeat;
+            background-color: white;
+            padding-left: 1.8rem;
+            height:1.2rem;
+            width: 90%;
+            border: none;
+            font-size: 0.75rem;
+        }
+    }
+}
+nav {
+    padding-bottom: 1rem;
+    background: #f3f3f3;
+    width: @width;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 0.5rem;
+    div {
+        text-align: center;
+        width: @imgwidth/5;
+        margin-top: 1rem;
+        img {
+            width: 50%;
+        }
+        p {
+            line-height: 2rem;
+            font-size: 1.25rem;
+        }
+    }
+    section {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        border-radius: 0.5rem;
+        height: 2rem;
+        margin: 0 auto;
+        width: 95%;
+        background: white;
+        margin-top: 1.5rem;
+        position: relative;
+        img {
+            width: 10%;
+            height: 1.2rem;
+            margin-left: 1%;
+        }
+        ul {
+            position: absolute;
+            left: 15%;
+            top: 0;
+            a {
+                line-height: 2rem;
+                font-size: 0.8rem;
+                span {
+                    color: red !important;
+                }
+            }
+        }
+        em {
+            position: absolute;
+            right: 1rem;
+        }
+    }
+}
+.miaoqiang {
+    border: 1px solid #f7f7f7;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: @width;
+    margin: 0 auto;
+    p {
+        line-height: 2rem;
+        display: flex;
+        position: relative;
+        align-items: center;
+        span {
+            font-family: iconfont;
+            padding-left: 0.6rem;
+            font-size: 1rem;
+        }
+        i {
+            padding-left: 0.5rem;
+            color: #ca1327;
+            font-size: 1rem;
+        }
+        em {
+            a {
+                display: inline-block;
+                padding: 3px;
+                background: #3d3d3d;
+                text-align: center;
+                color: white;
+                font-size: 0.75rem;
+                margin-left: 0.5rem;
+                line-height: 1rem;
+            }
+        }
+        b {
+            position: absolute;
+            right: 0.5rem;
+            display: flex;
+            justify-content: flex-end;
+            a {
+                color: black;
+                font-weight: 100;
+                font-size: 0.9rem;
+                padding-right: 0.5rem;
+            }
+        }
+    }
+    .spname {
+        display: flex;
+        position: relative;
+        dl {
+            width: 30%;
+            &.last {
+                flex: 1;
+                position: absolute;
+                left: 90%;
+                top: 0;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    dd {
+        text-align: center;
+        em {
+            color: red;
+            line-height: 1.5rem;
+            display: block;
+        }
+        i {
+            line-height: 1.2rem;
+            display: block;
+            text-decoration: line-through;
+        }
+    }
+    .phb {
+        display: flex;
+        a {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+.lovelife {
+    width: @width;
+    margin: 0 auto;
+    h1 {
+        img {
+            width: 100%;
+        }
+    }
+    .pic {
+        display: flex;
+        flex-flow: row wrap;
+        a {
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .lovesome {
+        display: flex;
+        a {
+            flex: 2.5;
+            display: block;
+            box-sizing: border-box;
+            border-right: 1px solid #f4f4f4;
+            padding-left: 0.5rem;
+            &:hover {
+                text-decoration: none;
+            }
+            h3 {
+                font-size: 1.6rem;
+                color: black;
+                font-weight: 100;
+            }
+            em {
+                font-size: 1.2rem;
+                color: #686868;
+                line-height: 2rem;
+            }
+            i {
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.xiangpz {
+    width: @width;
+    margin: 0 auto;
+    a {
+        img {
+            width: 100%;
+        }
+    }
+    .pingz {
+        display: flex;
+        flex-flow: row wrap;
+        .box {
+            justify-content: space-between;
+            display: flex;
+            position: relative;
+            width: 50%;
+            i {
+                display: block;
+                font-size: 1.2rem;
+                color: #686868;
+                padding: 0.5rem 0 0 0.5rem;
+                  white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: block;
+                 width: 100%;
+                 
+            }
+            em {
+                display: block;
+                font-size: 1.5rem;
+                color: black;
+                padding: 0.5rem 0 0 0.5rem;
+                  white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: block;
+                 width: 100%;
+                 
+            }
+        }
+        .btn {
+            position: absolute;
+            left: 0.6rem;
+            bottom: 5%;
+            line-height: 1.5rem;
+            color: white;
+            padding: 0 0.2rem;
+            background: #952dff;
+            font-size: 0.75rem;
+        }
+    }
+}
+.gotese {
+    overflow: hidden;
+    width: @width;
+    margin: 0 auto;
+    position: relative;
+    .mimgbox {
+        width: 300%;
+        position: relative;
+        overflow: hidden;
+        li {
+            float: left;
+            width: @imgwidth/3;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .mnumbox {
+        position: absolute;
+        left: 45%;
+        bottom: 2%;
+        display: flex;
+        li {
+            list-style: none;
+            height: @_height/3;
+            width: @_width/3;
+            border-radius: 50%;
+            border: 1px solid white;
+            margin-left: @_width/3;
+        }
+    }
+}
+.daojia {
+    width: @width;
+    margin: 0 auto;
+    img {
+        width: 100%;
+    }
+    .haodian {
+        display: flex;
+        .leftdian,
+        .rightdian {
+            position: relative;
+            width: 50%;
+            .dianname {
+                position: absolute;
+                bottom: 0.2rem;
+                left: 2.5%;
+                left: 0;
+                width: 95%;
+                line-height: 2rem;
+                background: #666666;
+                a {
+                    color: white;
+                    padding-left: 0.5rem;
+                }
+            }
+            em,
+            i,
+            a {
+                display: block;
+            }
+            a {
+                display: flex;
+                img {
+                    width: 50%;
+                    height: 10rem;
+                }
+            }
+            em {
+                padding-left: 1rem;
+                color: black;
+                font-size: 1.6rem;
+                line-height: 3rem;
+                font-weight: 100;
+                
+            }
+            i {
+                padding-left: 1rem;
+                color: #696969;
+                font-size: 1.2rem;
+                line-height: 2rem;
+               
+            }
+        }
+    }
+}
+.tuijian {
+    background: #f0f2f5;
+    width: @width;
+    margin: 0 auto;
+    .line {
+        padding: 0 0.5rem;
+        height: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .lineleft,
+        .lineright {
+            height: 1px;
+            width: 35%;
+            background: #dedfe0;
+        }
+        span {
+            color: black;
+            font-family: iconfont;
+        }
+    }
+}
+.shoping {
+    width: @width;
+    margin: 0 auto;
+    background: #f0f2f5;
+    display: flex;
+    flex-flow: row wrap;
+ 
+    .spzl {
+        border: 2px solid #f0f2f5;
+        width: 50%;
+        background: white;
+        box-sizing: border-box;
+        p {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            &.title {
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: block;
+            }
+            span {
+                color: red;
+                line-height: 1.5rem;
+                font-size: 1rem;
+            }
+            input {
+                border: none;
+                background: white;
+                color: black;
+                border: 1px solid #e6e6e6;
+                margin-right: 0.5rem;
+                padding: 0.1rem;
+            }
+        }
+        .spimg {
+            width: 100%;
+            
+            display: flex;
+            a{
+                width: 90%;
+            }
+            img {
+                width:100%;
+            }
+        }
+    }
+}
+.jixujz {
+    width: @width;
+    margin: 0 auto;
+    border: 1px solid #d9dadb;
+    line-height: 2rem;
+    text-align: center;
+    background: #f3f5f7;
+    cursor: pointer;
+}
+footer {
+    border-top: 1px solid #eae8e8;
+    background: white;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: @width;
+    margin: 0 auto;
+    a {
+        width: 25%;
+        text-align: center;
+        img {
+            width: 40%;
+        }
+    }
+}
+@media (min-width:800px) {
+    @width: 50%;
+    body {
+        width: @width;
+        font-size: 16px;
+        margin: 0 auto;
+        .search,
+        footer {
+            width: 50%;
+            left: 25%;
+        }
+    }
+}
+@media(max-width:414px)and(min-width:370px) {
+    html {
+        font-size: 12px;
+       
+       .xiangpz{
+           .box{
+               em{
+              
+                  font-size:0.5rem;
+               }
+               i{
+                 font-size:0.5rem; 
+               }
+           }
+       }
+        
+    }
+}
+@media(max-width:360px) {
+    html {
+        font-size: 8px;
+        .search {
+            h1 {
+                flex: 1.2;
+            }
+        }
+    }
+}
